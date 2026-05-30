@@ -1,0 +1,157 @@
+
+/* ========================================================= */
+/* --- Navin Patient Dashboard Chi CSS (Safe / Scoped) --- */
+/* ========================================================= */
+
+/* Ya khalil sarv classes chya aadhi '.patient-dashboard' lavla aahe. 
+   Tyamule junya dashboard var ya CSS cha kontahi parinam honar nahi. */
+
+.patient-dashboard {
+  background-color: #f0f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: -2rem; /* #app chi default padding cancel karnyasaathi */
+  text-align: left; /* Junya #app madhye center ahe, ithe left hava */
+}
+
+.patient-dashboard .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ithe .card la overwrite kela aahe pan fakta patient-dashboard madhyech */
+.patient-dashboard .card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+}
+
+.patient-dashboard .navbar {
+  background-color: #3b82f6;
+  color: white;
+  padding: 15px 40px;
+}
+
+.patient-dashboard .nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient-dashboard .nav-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.patient-dashboard .nav-tabs {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.patient-dashboard .nav-tab {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.patient-dashboard .nav-tab.active {
+  background-color: white;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.patient-dashboard .main-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+  padding: 24px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.patient-dashboard .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.patient-dashboard .camera-box {
+  background-color: #2d3748;
+  color: #a0aec0;
+  height: 350px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.patient-dashboard .exercise-cards {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.patient-dashboard .ex-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.patient-dashboard .ex-card img {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.patient-dashboard .rewards-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.patient-dashboard .reward-item {
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.patient-dashboard .reward-item h2 {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+}
+
+.patient-dashboard .btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.patient-dashboard .btn-primary:hover {
+  background-color: #2563eb;
+}
